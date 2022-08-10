@@ -1,0 +1,314 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-size: 62.5%;
+}  
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+blockquote, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, ul, li, ol, p, pre, span, td, th {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+ul, li, ol {
+    list-style: none;
+}
+img {
+  line-height: 0;
+  font-size: 0;
+  border: 0;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+span {
+    display: inline-block;
+}
+
+
+.fadeIn {
+    display: none;
+}
+.inner {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.clear {
+    clear: both;
+}
+
+
+/* header */
+header {
+    position: relative;
+    height: 100vh;
+    max-height: 120rem;
+    min-height: 60rem;
+    padding: 10rem 0 5rem 0;
+    color: white;
+    background-image: url(../img/header_back.jpg);
+    background-color: #FEC400;
+    background-position: center bottom;
+    background-size: cover;
+}
+@media screen and (max-width: 600px) {
+    header {
+        background-image: url(../img/header_back_sp.jpg);
+    }
+}
+.header_logo {
+    height: 12rem;
+    user-select: none;
+}
+header h2 {
+    font-size: 1.6rem;
+}
+.btn_appstore {
+    display: inline-block;
+    width: 12rem;
+    user-select: none;
+    margin-top: 3rem;
+}
+header p {
+    position: absolute;
+    bottom: 3rem;
+    font-size: 1.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* service */
+.service_container {
+    width: 100%;
+    height: 50vh;
+    min-height: 30rem;
+    max-height: 60rem;
+    color: white;
+    background-position: center bottom;
+    background-size: cover;
+    padding: 3rem;
+    letter-spacing: 0.05rem;
+}
+#service h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#service p {
+    display: block;
+    width: 90%;
+    font-size: 1.6rem;
+    margin:0 auto;
+}
+@media screen and (min-width: 601px) {
+    .service_container {
+        float: left;
+        width: calc(100% / 3);    
+    }
+    #service p {
+        width: 100%;
+    }
+}
+#sv-list01 {
+    background-image: url(../img/service_back1.jpg);
+    background-color: #F3F3F3;
+}
+#sv-list02 {
+    background-image: url(../img/service_back2.jpg);
+    background-color: #D1C5C9;
+}
+#sv-list03 {
+    background-image: url(../img/service_back3.jpg);
+    background-color: #DE7967;
+}
+
+
+/* service2 */
+#service2 {
+    text-align: center;
+    background-color: white;
+    padding: 6rem 0;
+}
+#service2 h2 {
+    width: 80%;
+    font-size: 2.4rem;
+    margin: 0 auto 2rem auto;
+}
+.service2_container {
+    width: 100%;
+    padding: 0 3rem;
+}
+.service2_container img {
+    height: 6rem;
+    margin-top: 2rem;
+}
+.service2_container h3 {
+    font-size: 2rem;
+    opacity: 0.8;
+    margin: 1rem 0;
+}
+.service2_container p {
+    width: 90%;
+    max-width: 50rem;
+    font-size: 1.6rem;
+    opacity: 0.8;
+    margin: 0 auto;
+}
+
+/* question */
+#question {
+    background-color: #d5dbeb;
+}
+#question_left {
+    position: relative;
+    width: 100%;
+    background: url(../img/question_sp.jpg) bottom no-repeat;
+    background-size: cover;
+}
+#question_left::before {
+    content: "";
+    display: block;
+    padding-top: 50%;
+}
+#question_right {
+    width: 100%;
+}
+#question_container {
+    opacity: 0.8;
+    padding: 3rem;
+}
+#question_container h2 {
+    width: 80%;
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 0 auto 2rem auto;
+}
+#question_container h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+#question_container p {
+    display: block;
+    width: 90%;
+    max-width: 50rem;
+    font-size: 1.6rem;
+    margin: 0 auto 3rem auto;
+}
+
+
+/* plan */
+#plan {
+    padding: 1rem;
+    background-color: rgb(245, 245, 245);
+}
+#plan_left, #plan_right {
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+}
+#plan_left h3 {
+    font-size: 2rem;
+}
+#plan_left img {
+    height: 8rem;
+    margin: 1rem 0;
+}
+#plan_right h3 {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+#plan_sb {
+    display: inline-block;
+    padding: 0.8em 0;
+}
+#plan_short, #plan_long {
+    display: inline-block;
+    height: 18rem;
+    margin: 0.5rem;
+}
+#plan_right p {
+    display: block;
+    width: 26rem;
+    text-align: left;
+    font-size: 1.2rem;
+    margin: 0 auto;
+}
+
+
+/* download */
+#download {
+    display: flex;
+    background-color: #fcbc36;
+}
+#download_left {
+    float: left;
+    width: 40%;
+    background: url(../img/download_back.png) center no-repeat;
+    background-size: cover;
+}
+@media screen and (max-width: 600px) {
+    #download_left {
+        background-image: url(../img/download_back_sp.png);
+    }
+}
+#download_right {
+    float: left;
+    width: 60%;
+    color: white;
+    text-align: center;
+    padding: 6rem 1rem;
+}
+#download_right p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: #414449;
+    padding: 4rem 2rem 2rem 2rem;
+}
+#footer_above a {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    margin: 0 2rem;
+}
+@media screen and (max-width: 600px) {
+    #footer_above a {
+        float: left;
+        width: 50%;
+        margin: 0 0 1rem 0;
+    }
+}
+#footer_instagram {
+    display: block;
+    text-align: right;
+}
+.fa-instagram {
+    font-size: 4rem;
+    color: white;
+}
+footer p {
+    font-size: 1.2rem;
+    color: #909295;
+}
